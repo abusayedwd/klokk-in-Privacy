@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.header .tagline {
+    font-size: 1.1em;
+    opacity: 0.95;
+    margin-bottom: 20px;
+}
+
+.last-updated {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 50px 40px;
+}
+
+.intro {
+    background: #f8f9ff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 4px solid #667eea;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #667eea;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-number {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.section ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 10px;
+    color: #555;
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+.section li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.section a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.company-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+.company-info h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.company-info p {
+    margin: 8px 0;
+    opacity: 0.95;
+}
+
+.contact-box {
+    background: #f8f9ff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-box h3 {
+    color: #667eea;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+.contact-item a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+    margin: 20px 0;
+}
+
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 40px 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .section h2 {
+        font-size: 1.4em;
+    }
+
+    .company-info {
+        padding: 20px;
+    }
+
+    .contact-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.6em;
+    }
+
+    .header .tagline {
+        font-size: 1em;
+    }
+
+    .section h2 {
+        font-size: 1.2em;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-number {
+        width: 30px;
+        height: 30px;
+    }
+}
